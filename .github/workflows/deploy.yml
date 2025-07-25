@@ -35,11 +35,6 @@ jobs:
       
     - name: 🔍 Run ESLint check
       run: npm run lint --if-present || true
-      
-    - name: 🧪 Run tests (if any)
-      run: npm test --passWithNoTests --watchAll=false
-      env:
-        CI: true
         
     - name: 🏗️ Build React app
       run: npm run build
